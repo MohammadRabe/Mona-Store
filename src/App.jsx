@@ -56,7 +56,7 @@ function ProductDetail({ product, products, lang, onAdd, onOpen, onBack, favorit
 }
 
 export default function App() {
-  const [lang, setLang] = useState(() => localStorage.getItem('mona-lang') || 'en');
+  const [lang, setLang] = useState(() => localStorage.getItem('mona-lang') || 'ar');
   const [dark, setDark] = useState(() => localStorage.getItem('mona-theme-v2') !== 'light');
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
